@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">The Recipe App</string>
+    <string name="nama_masakan">Nama Masakan</string>
+    <string name="durasi_dan_porsi">Durasi dan Porsi</string>
+    <string name="deskripsi_makanan">Deskripsi Makanan</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="food_info">%1$s | %2$s</string>
+    <string name="bahan">Bahan:</string>
+    <string name="cara_memasak">Cara Memasak:</string>
+    <string name="about">About</string>
+    <string name="ananda_satria">Ananda Satria</string>
+    <string name="email">putu.satriaadi@gmail.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

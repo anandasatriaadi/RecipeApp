@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:padding="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/container_img_photo"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="12dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                tools:src="@tools:sample/avatars"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/container_img_photo"
+            android:text="@string/nama_masakan"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_item_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/container_img_photo"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/durasi_dan_porsi" />
+
+        <TextView
+            android:id="@+id/tv_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_info"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/container_img_photo"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="@string/deskripsi_makanan" />
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_img_photo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_set_favorite"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/favorite"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_set_share"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/share"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

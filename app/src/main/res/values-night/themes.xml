@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RecipeAppSubmission" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/cambridge_blue</item>
+        <item name="colorPrimaryVariant">@color/green_sheen</item>
+        <item name="colorOnPrimary">@color/eggshell</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#68B0AB</item>
+        <item name="colorSecondaryVariant">#696D7D</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="forceLight" >
+        <item name="backgroundColor">@color/eggshell</item>
+        <item name="backgroundTint">@color/eggshell</item>
+        <item name="android:textColor">@color/black_coral</item>
+    </style>
+</resources>
